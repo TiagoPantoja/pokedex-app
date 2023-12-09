@@ -6,7 +6,7 @@ Node.js instalado em sua máquina.
 
 1. Clone o repositório:
 ```
-git clone http://github.com/TiagoPantoja/pokedex-app.git
+git clone https://github.com/TiagoPantoja/pokedex-app.git
 ```
 2. Navegue até o diretório `pokedex-app`
 ```

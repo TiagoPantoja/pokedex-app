@@ -1,12 +1,58 @@
-# Getting Started with Create React App
+# Interface Projeto Pokédex
+Esta é uma aplicação front-end utilizando React e TypeScript que interage com o projeto API Pokédex.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pré-requisitos
+Node.js instalado em sua máquina.
 
-## Available Scripts
+1. Clone o repositório:
+```
+git clone http://github.com/TiagoPantoja/pokedex-app.git
+```
+2. Navegue até o diretório `pokedex-app`
+```
+cd pokedex-app
+```
+3. Execute o comando para construir a imagem Docker:
+```
+docker buiild -t pokedex-app:latest .
+```
+4. Execute o cônteiner com o comando:
+```
+docker run -p 8080:80 pokedex-app:latest
+```
 
-In the project directory, you can run:
+5. Instale as dependências:
+```
+npm install
+```
 
-### `npm start`
+6. Inicie o servidor de desenvolvimento:
+```
+npm start
+```
+A aplicação estará acessível em http://localhost:3000.
+
+### Build
+Construir a aplicação para produção:
+```
+npm run build
+```
+
+## Como usar:
+### Buscar um Pokémon:
+1. Insira o nome ou ID do Pokémon na barra de pesquisa.
+2. Clique no botão "Buscar".
+
+### Ver lista de Pokémon:
+1. Visite: http://localhost:3000
+2. Clique nos nomes dos Pokémons para mais detalhes.
+
+### Ver detalhes de Pokémon:
+1. Clique no nome de um Pokémon na lista para ver informações detalhadas.
+2. Cique no botão "Salvar no Banco de Dados" para salvar o Pokémon no banco.
+
+### Integração com a API Pokédex
+A aplicação interage com a API Pokédex em `http://localhost:8080`. A API deve estar em execução antes de usar a aplicação front-end.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
